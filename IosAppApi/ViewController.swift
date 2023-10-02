@@ -5,11 +5,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var callCoinBase: UIButton!
     @IBOutlet weak var callOpenBreweryApi: UIButton!
     @IBOutlet weak var callJokesApi: UIButton!
+    
+  
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     @IBAction func CoinBaseApi(_ sender: Any) {
         Task {
             do {
