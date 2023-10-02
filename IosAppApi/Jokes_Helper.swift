@@ -2,18 +2,18 @@
 
 import Foundation
 
-enum CoinBaseApi_Errors: Error {
+enum JokesApi_Errors: Error {
     case CANNOT_PARSE_DATA_INTO_JSON
     case CANNOT_CONVERT_STRING_TO_URL
 }
 
-class CoinBaseAPI_Helper{
-    static private let baseURL_String = "https://api.coinbase.com/v2/currencies"
+class JokesAPI_Helper{
+    static private let baseURL_String = "https://api.chucknorris.io/jokes/random"
     
     static public func fetch() async throws -> Any{
         guard
             let url = URL(string: baseURL_String)
-        else {throw CoinBaseApi_Errors.CANNOT_CONVERT_STRING_TO_URL}
+        else {throw JokesApi_Errors.CANNOT_CONVERT_STRING_TO_URL}
         
         do{
             let (data, response) = try await URLSession.shared.data(from: url)
@@ -28,3 +28,4 @@ class CoinBaseAPI_Helper{
         }
     }
 }
+

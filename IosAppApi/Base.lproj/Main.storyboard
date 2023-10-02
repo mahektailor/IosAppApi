@@ -25,12 +25,27 @@
                                     <action selector="CoinBaseApi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7t-MI-fdG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRu-ju-Ykh">
+                                <rect key="frame" x="129" y="268" width="116" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Brewery Api"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="du8-B4-dFt">
+                                <rect key="frame" x="138" y="363" width="98" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Jokes APi"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="CallCoinBaseApi" destination="5Vm-aF-SgO" id="GHe-T2-L2P"/>
+                        <outlet property="callCoinBase" destination="5Vm-aF-SgO" id="bYC-gq-Rhc"/>
+                        <outlet property="callJokesApi" destination="du8-B4-dFt" id="YcC-lJ-h4N"/>
+                        <outlet property="callOpenBreweryApi" destination="ZRu-ju-Ykh" id="f0Z-eL-Pzp"/>
                         <outlet property="callPokeAPI" destination="5Vm-aF-SgO" id="QAy-eu-eIg"/>
                     </connections>
                 </viewController>
